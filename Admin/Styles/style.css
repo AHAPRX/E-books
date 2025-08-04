@@ -1,0 +1,186 @@
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+      }
+      .sidebar {
+        width: 260px;
+        transition: all 0.3s;
+      }
+      .main-content {
+        width: calc(100% - 260px);
+        transition: all 0.3s;
+      }
+      .sidebar.collapsed {
+        width: 80px;
+      }
+      .main-content.expanded {
+        width: calc(100% - 80px);
+      }
+      .sidebar.collapsed .nav-text {
+        display: none;
+      }
+      .sidebar.collapsed .logo-text {
+        display: none;
+      }
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+      /* Custom switch */
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 44px;
+        height: 24px;
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #e5e7eb;
+        transition: .4s;
+        border-radius: 24px;
+      }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+      }
+      input:checked + .slider {
+        background-color: #4f46e5;
+      }
+      input:checked + .slider:before {
+        transform: translateX(20px);
+      }
+      /* Custom checkbox */
+      .custom-checkbox {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+      .custom-checkbox input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 1px solid #d1d5db;
+        border-radius: 4px;
+        transition: all 0.2s;
+      }
+      .custom-checkbox input:checked ~ .checkmark {
+        background-color: #4f46e5;
+        border-color: #4f46e5;
+      }
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .custom-checkbox input:checked ~ .checkmark:after {
+        display: block;
+      }
+      .custom-checkbox .checkmark:after {
+        left: 7px;
+        top: 3px;
+        width: 6px;
+        height: 11px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+      /* Custom radio */
+      .custom-radio {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+      }
+      .custom-radio input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .radiomark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        border: 1px solid #d1d5db;
+        border-radius: 50%;
+      }
+      .custom-radio input:checked ~ .radiomark {
+        border-color: #4f46e5;
+      }
+      .radiomark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      .custom-radio input:checked ~ .radiomark:after {
+        display: block;
+      }
+      .custom-radio .radiomark:after {
+        top: 5px;
+        left: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #4f46e5;
+      }
+      /* Tab switcher */
+      .tab-switcher {
+        display: flex;
+        background-color: #f3f4f6;
+        border-radius: 9999px;
+        padding: 4px;
+        position: relative;
+      }
+      .tab-switcher .tab-button {
+        padding: 8px 16px;
+        border-radius: 9999px;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s;
+        white-space: nowrap;
+      }
+      .tab-switcher .tab-button.active {
+        color: white;
+      }
+      .tab-switcher .tab-indicator {
+        position: absolute;
+        height: calc(100% - 8px);
+        top: 4px;
+        left: 4px;
+        background-color: #4f46e5;
+        border-radius: 9999px;
+        transition: all 0.3s;
+      }
