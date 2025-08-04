@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   <h1>📚 E_Books</h1>
   <p><strong>E_Books</strong> is a modern and responsive web application built using <strong>PHP</strong>, <strong>MySQL</strong>, <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>. It provides an interactive digital library platform where users can register, explore books by categories or authors, participate in reading competitions, and more. Admins can manage books and users through a dedicated panel, while smooth transitions and a dark mode theme enhance the user experience.</p>
 
@@ -57,3 +58,7 @@ GMAIL_APP_PASSWORD=your-app-password
 
 
 
+=======
+# E-books
+A dynamic PHP-based eBook website with user login, animated UI using GSAP, and MySQL database integration. Built with HTML, CSS, JS, and PHP for responsive, interactive book browsing.
+>>>>>>> fc207a86650f8bf42ddd218dfec0ecc7760dd26d
